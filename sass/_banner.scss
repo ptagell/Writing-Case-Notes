@@ -1,0 +1,35 @@
+//BANNER STYLING
+#banner { 
+  background: url("../images/bg.png") repeat;
+  overflow:hidden;
+  clear: both;
+  height: 75px;
+  
+  a.logo { 
+    display: block;
+    width: 210px;
+    height: 45px;
+    margin-top: 15px;
+    background: url('../images/tw-logo-210px.png') no-repeat;
+    text-indent:-999em;
+    float:left;
+  }
+    
+  a.website { 
+    display: block;
+    background: black;
+    color: #4a4a4a;
+    border-radius:4px;
+    float:right;
+    padding: 5px 10px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    
+    &:hover { 
+      color: #fff;
+    }
+  }  
+}
+  
+  

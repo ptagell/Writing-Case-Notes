@@ -1,0 +1,43 @@
+
+section#hero { 
+  
+  img { margin-left: 10%;}
+  
+  h1 { 
+    color: #434343;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.9);
+    margin-top:0.5em;
+    margin-bottom: 0.25em;
+    font-size: 4em;
+    text-align: center;
+    }
+  h2 { 
+    color: #434343;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    }
+  a.button { 
+    background: #802121;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration:none;
+    display: block;
+    text-align: center;
+    
+    &:hover {
+//      Insert glow effect
+      };
+    }
+  p { 
+    text-align: center;
+    color: #434343;
+    }
+    
+  form input { 
+    
+  }  
+
+}
