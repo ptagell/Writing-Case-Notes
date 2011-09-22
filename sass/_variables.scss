@@ -1,16 +1,14 @@
 $darkgrey: #272727; 
-$blue: #0098d8;
+
+@mixin blue { 
+background: #258dc8; /* Old browsers */
+background: -moz-linear-gradient(top, #258dc8 0%, #258dc8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#258dc8), color-stop(100%,#258dc8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #258dc8 0%,#258dc8 100%); /* W3C */
+}
+
 $grey: #e9e9e9;
-
-
-
-
-.wrapper { margin: 0 10%;
-  > .col-1 { 
-    margin-right: 5%;}
-  .col-1 { 
-    width: 45%; 
-    float:left;
-    }
-  
-  }

@@ -1,0 +1,197 @@
+
+@import "inuit";
+@import "variables";
+@import "banner";
+@import "heading";
+@import "why";
+@import "contents";
+
+
+
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+html{
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	color:#e4eef6;
+	@include blue;
+}
+body{
+	background:none;
+//  text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
+}
+#page{
+	margin:0 auto;
+	float:none;
+	text-align:center;
+}
+
+.wrapper{
+  width:940px;
+	margin:0 auto;
+	padding:0 10px;
+	
+	.2col { 
+	  width: 50%:;
+	  
+	  &.first { 
+	    margin-right: 5%;
+	    width: 45%;
+	    }
+	  }
+}
+
+#hero, #why, #contents, #about, footer { padding-top: 3em; padding-bottom: 3em;}
+
+
+  
+header#hero { 
+  background: #eeeeee; /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* W3C */
+  clear:both;
+  overflow: hidden;
+  img { float:left;
+    margin-right: 2em;
+    margin-left: 2em;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
+    border: 6px solid #fff;}
+  #headingtext{ 
+    text-align: center;    
+    padding-top: 50px;
+    h1 { 
+      color: #434343;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.9);
+      margin-bottom: 0.25em;
+      font-size: 4em;
+      text-align: center;
+      }
+    h2 { 
+      color: #434343;
+      text-align: center;
+      font-weight: normal;
+      font-size: 1.0em;
+      margin-bottom: 2em;
+      margin-top: 2em;
+      }
+    a.button { 
+      background: #a90329; /* Old browsers */
+      background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera11.10+ */
+      background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+      background: linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+      padding: 10px 30px;
+      margin-top: 40px;
+      color: #fff;
+      border-radius: 4px;
+      border: 1px solid rgba(169,3,41, 0.6);
+      text-decoration:none;
+      text-align: center;
+
+      &:hover {
+       background: #8f0222;
+       box-shadow: 10px 10px 30px rgba(169,3,41, 0.3);
+
+        };
+      }
+    p { 
+      text-align: center;
+      color: #434343;
+      }
+  }
+}
+  
+section#why { 
+  @include blue;
+  }  
+
+section#contents { 
+  background: url('../images/bg.png') repeat; 
+  }  
+
+section#about { 
+  @include blue;
+  color: lighten($grey, 0.5);
+  }
+
+footer { 
+  background: url('../images/bg.png');
+}
+
+hr { clear: both; border:none; margin: 0px; padding: 0px;}
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+h1{
+	font-weight:bold;
+	font-size:3em;
+	line-height:1;
+}
+
+h2 { 
+  font-size: 2em;
+  }
+a{
+	color:inherit;
+}
+
+@import "typography";
+
+
+/*------------------------------------*\
+	IMAGES
+\*------------------------------------*/
+#logo{
+	margin-bottom:1.5em;
+}
+
+
+
+
+
+/*------------------------------------*\
+	NARROW
+\*------------------------------------*/
+/*
+CSS for tablets and narrower devices
+*/
+
+
+
+
+
+@media (min-width: 721px) and (max-width: 960px){}
+/*--- END NARROW ---*/
+
+
+
+
+
+/*------------------------------------*\
+	MOBILE
+\*------------------------------------*/
+/*
+CSS for mobile devices.
+Linearise it!
+*/
+
+
+
+
+
+@media (max-width: 720px){
+body{
+	font-size:0.75em;
+}
+}
+/*--- END MOBILE ---*/
+
