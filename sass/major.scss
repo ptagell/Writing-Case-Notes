@@ -1,10 +1,6 @@
 
 @import "inuit";
 @import "variables";
-@import "banner";
-@import "heading";
-@import "why";
-@import "contents";
 
 
 
@@ -16,8 +12,10 @@ html{
 	color:#e4eef6;
 }
 body{
-	background:none;
-//  text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
+  background: url('../images/greybackground.gif') repeat;
+  color: #434343;
+  font-family: Hoefler Text, Georgia, Serif;
+
 }
 #page{
 	margin:0 auto;
@@ -31,13 +29,14 @@ body{
 	padding:0 10px;
 	
 	.col-2 { 
-	  width: 50%;
+	  width: 48%;
 	  float:left;
 	  position:relative;
+
 	  
 	  &.first { 
-	    margin-right: 5%;
-	    width: 45%;
+	    margin-right: 4%;
+	    width: 48%;
 	    }
 	  }
 }
@@ -45,27 +44,60 @@ body{
 #hero, #why, #contents, #about, footer { padding-top: 3em; padding-bottom: 3em; clear:both; overflow:hidden; border-bottom: 3px solid rgba(255,255,255,0.2);}
 
 
+//BANNER STYLING
+#banner { 
+  overflow:hidden;
+  clear: both;
+  height: 75px;
+  padding-top: 10px;
+
+  
+  a.logo { 
+    display: block;
+    width: 210px;
+    height: 45px;
+    margin-top: 15px;
+    background: url('../images/tw-logo-210px-b.png') no-repeat;
+    text-indent:-999em;
+    float:left;
+  }
+    
+  a.website { 
+    display: block;
+    background: $grey;
+    background: rgba(0,0,0,0.3);
+    
+    color: rgba(255,255,255,0.8);
+    border-radius:4px;
+    float:right;
+    padding: 5px 5px 2px 5px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    
+    &:hover { 
+      color: #fff;
+      color: rgba(255,255,255,0.9);
+      box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+      text-decoration: underline;
+    }
+  }  
+}
+  
+
   
 header#hero { 
-  background: #eeeeee; /* Old browsers */
-  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
-  background: linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* W3C */
-  background: url('../images/greybackground.gif') repeat;
+
   clear:both;
   overflow: hidden;
   
-  img { float:left;
-    margin-right: 2em;
-    margin-left: 2em;
+  img { 
+    float:right;
+    margin-right: 10%;
     box-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
     border: 6px solid #fff;}
   .share {
-    width: 50%;
+
     float:right;
     margin-top: 1em;
   }  
@@ -113,13 +145,12 @@ header#hero {
       }
     p { 
       text-align: center;
-      color: #434343;
+
       }
   }
 }
   
 section#why { 
-  @include blue;
   
   aside { 
     padding: 30px 20px 10px 20px;
@@ -128,26 +159,26 @@ section#why {
     display:block;
     background: #000;
     background: rgba(0,0,0,0.7);
-    
+    color: #fff;
     p { 
           font-family: "Helvetica Neue", Arial, Sans-serif;
           font-size: 1.5em; 
           font-weight: 100;
+
           }
     }
   }  
 
 section#contents { 
-  background: url('../images/bg.png') repeat; 
+
   }  
 
 section#about { 
-  @include blue;
-  color: lighten($grey, 0.5);
+
+
   }
 
 footer { 
-  background: url('../images/bg.png');
 }
 
 hr { clear: both; border:none; margin: 0px; padding: 0px;}
@@ -168,7 +199,6 @@ a{
 	color:inherit;
 }
 
-@import "typography";
 
 
 /*------------------------------------*\
