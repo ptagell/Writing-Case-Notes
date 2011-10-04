@@ -842,42 +842,16 @@ body {
   padding-top: 3em;
   padding-bottom: 3em;
   clear: both;
-  overflow: hidden;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
-
-#banner {
-  overflow: hidden;
-  clear: both;
-  height: 75px;
-  padding-top: 10px; }
-  #banner a.logo {
-    display: block;
-    width: 210px;
-    height: 45px;
-    margin-top: 15px;
-    background: url("../images/tw-logo-210px-b.png") no-repeat;
-    text-indent: -999em;
-    float: left; }
-  #banner a.website {
-    display: block;
-    background: #e9e9e9;
-    background: rgba(0, 0, 0, 0.3);
-    color: rgba(255, 255, 255, 0.8);
-    border-radius: 4px;
-    float: right;
-    padding: 5px 5px 2px 5px;
-    margin: 20px;
-    text-decoration: none;
-    text-align: center; }
-    #banner a.website:hover {
-      color: #fff;
-      color: rgba(255, 255, 255, 0.9);
-      box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
-      text-decoration: underline; }
+  overflow: hidden; }
 
 header#hero {
+  border-top: 7px solid #000;
   clear: both;
-  overflow: hidden; }
+  overflow: hidden;
+  background: black;
+  background: rgba(0, 0, 0, 0.9);
+  background: url("../images/bg.png") repeat;
+  color: white; }
   header#hero img {
     float: right;
     margin-right: 10%;
@@ -890,8 +864,8 @@ header#hero {
     text-align: center;
     padding-top: 50px; }
     header#hero #headingtext h1 {
-      color: #434343;
-      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+      color: #fff;
+      text-shadow: 1px 1px 2px black;
       margin-bottom: 0.25em;
       font-size: 4em;
       text-align: center;
@@ -940,11 +914,37 @@ section#why aside {
   display: block;
   background: #000;
   background: rgba(0, 0, 0, 0.7);
+  background: url("../images/bg.png") repeat;
   color: #fff; }
   section#why aside p {
     font-family: "Helvetica Neue", Arial, Sans-serif;
     font-size: 1.5em;
     font-weight: 100; }
+
+footer {
+  border-bottom: 5px solid #000; }
+  footer ul {
+    float: left;
+    position: relative;
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px; }
+    footer ul li {
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #fff;
+      float: left;
+      position: relative; }
+      footer ul li:last-child {
+        border-right: none; }
+  footer a.logo {
+    display: block;
+    width: 210px;
+    height: 45px;
+    margin-top: 15px;
+    background: url("../images/tw-logo-210px-b.png") no-repeat;
+    text-indent: -999em;
+    float: right; }
 
 hr {
   clear: both;
@@ -978,6 +978,9 @@ a {
 /*
 CSS for tablets and narrower devices
 */
+@media (min-width: 721px) and (max-width: 960px) {
+  .col-2 {
+    width: 100%; } }
 /*--- END NARROW ---*/
 /*------------------------------------*\
 	MOBILE

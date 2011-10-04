@@ -41,56 +41,29 @@ body{
 	  }
 }
 
-#hero, #why, #contents, #about, footer { padding-top: 3em; padding-bottom: 3em; clear:both; overflow:hidden; border-bottom: 3px solid rgba(255,255,255,0.2);}
+#hero, #why, #contents, #about, footer { 
+  padding-top: 3em; 
+  padding-bottom: 3em; 
+  clear:both; 
+  overflow:hidden;
+//  border-bottom: 1px solid rgba(255,255,255,0.9);
+}
 
 
 //BANNER STYLING
-#banner { 
-  overflow:hidden;
-  clear: both;
-  height: 75px;
-  padding-top: 10px;
 
-  
-  a.logo { 
-    display: block;
-    width: 210px;
-    height: 45px;
-    margin-top: 15px;
-    background: url('../images/tw-logo-210px-b.png') no-repeat;
-    text-indent:-999em;
-    float:left;
-  }
-    
-  a.website { 
-    display: block;
-    background: $grey;
-    background: rgba(0,0,0,0.3);
-    
-    color: rgba(255,255,255,0.8);
-    border-radius:4px;
-    float:right;
-    padding: 5px 5px 2px 5px;
-    margin: 20px;
-    text-decoration: none;
-    text-align: center;
-    
-    &:hover { 
-      color: #fff;
-      color: rgba(255,255,255,0.9);
-      box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
-      text-decoration: underline;
-    }
-  }  
-}
-  
+
+
 
   
 header#hero { 
-
+  border-top: 7px solid #000;
   clear:both;
   overflow: hidden;
-  
+  background: black;
+  background: rgba(0,0,0,0.9);
+  background: url("../images/bg.png") repeat;
+  color: white;
   img { 
     float:right;
     margin-right: 10%;
@@ -104,9 +77,10 @@ header#hero {
   #headingtext{ 
     text-align: center;    
     padding-top: 50px;
+
     h1 { 
-      color: #434343;
-      text-shadow: 1px 1px 2px rgba(255,255,255,0.9);
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,1);
       margin-bottom: 0.25em;
       font-size: 4em;
       text-align: center;
@@ -159,6 +133,7 @@ section#why {
     display:block;
     background: #000;
     background: rgba(0,0,0,0.7);
+    background: url("../images/bg.png") repeat;
     color: #fff;
     p { 
           font-family: "Helvetica Neue", Arial, Sans-serif;
@@ -176,9 +151,37 @@ section#contents {
 section#about { 
 
 
-  }
+}
 
 footer { 
+  border-bottom: 5px solid #000;
+  ul { 
+    float:left;
+    position: relative;
+    list-style:none;
+    margin-left: 0px;
+    padding-left: 0px;
+    li { 
+      margin-right: 10px; 
+      padding-right: 10px;
+      border-right: 1px solid #fff;
+      float:left; 
+      position: relative;
+      
+      &:last-child {
+        border-right: none;
+      } 
+    }
+    }
+  a.logo { 
+    display: block;
+    width: 210px;
+    height: 45px;
+    margin-top: 15px;
+    background: url('../images/tw-logo-210px-b.png') no-repeat;
+    text-indent:-999em;
+    float:right;
+  }
 }
 
 hr { clear: both; border:none; margin: 0px; padding: 0px;}
@@ -223,7 +226,10 @@ CSS for tablets and narrower devices
 
 
 
-@media (min-width: 721px) and (max-width: 960px){}
+@media (min-width: 721px) and (max-width: 960px){
+  
+  .col-2 { width: 100%;}
+}
 /*--- END NARROW ---*/
 
 
