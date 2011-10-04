@@ -1,78 +1,1087 @@
+@charset "UTF-8";
+/*------------------------------------*\
+	INUIT.CSS
+\*------------------------------------*/
 /*
-Syntax error: Invalid CSS after "	.": expected class name, was "2col { "
-        on line 34 of sass/major.scss
+Author:             Harry Roberts
+Twitter:            @inuitcss
+Author URL:         csswizardry.com
+Project URL:        inuitcss.com
+Version:            3.0.a
+Date:               30 June 2011
 
-29: .wrapper{
-30:   width:940px;
-31: 	margin:0 auto;
-32: 	padding:0 10px;
-33: 	
-34: 	.2col { 
-35: 	  width: 50%:;
-36: 	  
-37: 	  &.first { 
-38: 	    margin-right: 5%;
-39: 	    width: 45%;
+Copyright 2011 Harry Roberts
 
-Backtrace:
-sass/major.scss:34
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:898:in `expected'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:841:in `expected'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:823:in `expr!'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:519:in `class_selector'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:485:in `simple_selector_sequence'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:466:in `_selector'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:445:in `selector'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:429:in `selector_sequence'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:354:in `ruleset'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:417:in `block in declaration_or_ruleset'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:872:in `call'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:872:in `rethrow'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:418:in `declaration_or_ruleset'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:380:in `block_child'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:372:in `block_contents'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:361:in `block'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:355:in `ruleset'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:379:in `block_child'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:372:in `block_contents'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:57:in `stylesheet'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/scss/parser.rb:26:in `parse'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/engine.rb:320:in `_to_tree'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/engine.rb:240:in `render'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `each'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `each'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:252:in `block (4 levels) in watch'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:245:in `watch'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/plugin.rb:111:in `method_missing'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/exec.rb:408:in `watch_or_update'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/exec.rb:294:in `process_result'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/exec.rb:41:in `parse'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/lib/sass/exec.rb:21:in `parse!'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/gems/sass-3.1.7/bin/sass:8:in `<top (required)>'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/bin/sass:19:in `load'
-/Users/Tagell/.rvm/gems/ruby-1.9.3-head/bin/sass:19:in `<main>'
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 */
-body:before {
-  white-space: pre;
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+html {
+  overflow-y: scroll;
+  /* Force scrollbars 100% of the time */
+  font-size: 100%;
+  /* Use 16px as per http://www.informationarchitects.jp/en/100e2r/ and http://www.wilsonminer.com/posts/2008/oct/20/relative-readability/ */
+  font-family: Calibri, "Helvetica Neue", Arial, sans-serif;
+  /* Swap these two lines around to switch between serif and sans */
+  font-family: Cambria, Georgia, "Times New Roman", serif;
+  /* Swap these two lines around to switch between serif and sans */
+  line-height: 1.5;
+  background: url(../img/css/baseline.gif) 0 18px white;
+  color: #333; }
+
+body {
+  min-height: 100%; }
+
+/*------------------------------------*\
+	GRIDS
+\*------------------------------------*/
+/*
+Build a custom grid-system igloo at inuitcss.com
+*/
+/*------------------------------------*\
+	CLEARFIX
+\*------------------------------------*/
+/*
+Fix clearing issues as per: http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.cf,
+.grids {
+  zoom: 1; }
+
+.cf:before,
+.grids:before,
+.cf:after,
+.grids:after {
+  content: "";
+  display: table; }
+
+.cf:after,
+.grids:after {
+  clear: both; }
+
+/*------------------------------------*\
+	LOGO
+\*------------------------------------*/
+/*
+Your logo is an image, not a h1: http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/
+*/
+#logo,
+#logo img {
+  display: block;
+  width: auto;
+  /* Width of your logo in pixels (ideally a round grid-number) */
+  height: auto;
+  /* Height of your logo in pixels */ }
+
+/* Based on the fact that we need to use an <img /> in our markup, let’s hide the actual image and use a background on the <a>--this gives us semantically sound markup and the ability to use sprites for hover effects! */
+#logo {
+  background: url(/path/to/logo); }
+
+#logo:hover {
+  /* Hover states */
+  background-position: 0 0px; }
+
+#logo img {
+  position: absolute;
+  left: -99999px; }
+
+/*------------------------------------*\
+	NAV
+\*------------------------------------*/
+.nav {
+  list-style: none;
+  margin: 0 0 1.5em 0; }
+
+.nav li {
+  display: inline; }
+
+.nav a {
+  display: inline-block; }
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+/*--- HEADINGS ---*/
+h1 {
+  font-size: 2em;
+  /* 32px */
+  margin-bottom: 0.75em;
+  /* 24px */
+  line-height: 1.5;
+  /* 48px */ }
+
+h2 {
+  font-size: 1.5em;
+  /* 24px */
+  margin-bottom: 1em;
+  /* 24px */
+  line-height: 1;
+  /* 24px */ }
+
+h3 {
+  font-size: 1.25em;
+  /* 20px */
+  margin-bottom: 1.2em;
+  /* 24px */
+  line-height: 1.2;
+  /* 24px */ }
+
+h4 {
+  font-size: 1.125em;
+  /* 18px */
+  margin-bottom: 1.333em;
+  /* 24px */
+  line-height: 1.333;
+  /* 24px */ }
+
+h5 {
+  font-weight: bold; }
+
+h5,
+h6 {
+  font-size: 1em;
+  /* 16px */
+  margin-bottom: 1.5em;
+  /* 24px */
+  line-height: 1.5;
+  /* 24px */ }
+
+/*--- PARAGRAPHS ---*/
+p,
+address {
+  margin-bottom: 1.5em; }
+
+/*
+Mo’ robust paragraph indenting: http://csswizardry.com/2010/12/mo-robust-paragraph-indenting/
+Uncomment to activate
+p+p{
+	text-indent:2em;
+	margin-top:-1.5em;
+}
+*/
+/*--- FIGURES ---*/
+figure {
+  margin-bottom: 1.5em; }
+
+figure img {
+  display: block;
+  margin-bottom: 0; }
+
+figcaption {
+  font-size: 0.75em; }
+
+/*--- LINKS ---*/
+/*
+Say no to negative hovers: http://csswizardry.com/2011/05/on-negative-hovers/
+A negative hover is one whose appearance is subtracted from on hover rather than added to.
+*/
+a {
+  text-decoration: none; }
+
+a:visited {
+  opacity: 0.8;
+  /* A bit basic, but it’s a bare minumum... */ }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active,
+a:focus {
+  /* Give clicked links a depressed effect. */
+  position: relative;
+  top: 1px; }
+
+/*--- LISTS ---*/
+ul,
+ol {
+  margin: 0 0 1.5em 60px; }
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  /* Let’s take care of lists in lists */
+  margin: 0 0 0 60px; }
+
+/*
+A numbered list is NOT the same as an ordered one.
+Use this class when you want a list to be numbered but it has no order.
+See http://jsfiddle.net/csswizardry/sdrth/
+*/
+ul.numbered {
+  list-style: decimal outside; }
+
+dl {
+  margin-bottom: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dt:after {
+  content: ":"; }
+
+dt::after {
+  content: ":"; }
+
+dd {
+  margin-left: 60px; }
+
+/*--- QUOTES ---*/
+blockquote {
+  text-indent: -0.4em;
+  /* Hang that punctuation */ }
+
+blockquote b,
+blockquote .source {
+  /* Mark the source up with either a <b> or another element of your choice with a class of source. */
+  display: block;
+  text-indent: 0; }
+
+/*--- GENERAL ---*/
+q,
+i,
+em,
+cite {
+  font-style: italic;
+  font-weight: inherit; }
+
+b,
+strong {
+  font-weight: bold;
+  font-style: inherit; }
+
+mark {
+  background: #ffc; }
+
+s,
+del {
+  text-decoration: line-through; }
+
+small {
+  font-size: 0.75em;
+  line-height: 1; }
+
+/*--- CODE ---*/
+pre,
+code {
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"	.\": expected class name, was \"2col { \"\A         on line 34 of sass/major.scss\A \A 29: .wrapper{\A 30:   width:940px;\A 31: 	margin:0 auto;\A 32: 	padding:0 10px;\A 33: 	\A 34: 	.2col { \A 35: 	  width: 50%:;\A 36: 	  \A 37: 	  &.first { \A 38: 	    margin-right: 5%;\A 39: 	    width: 45%;"; }
+  font-size: 1em; }
+
+pre {
+  overflow: auto;
+  margin-bottom: 1.5em;
+  line-height: 24px;
+  /* Having to define explicit pixel values :( */ }
+
+code {
+  line-height: 1; }
+
+/*------------------------------------*\
+	IMAGES
+\*------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+  /* Give it some text styles to offset alt text */
+  font-style: italic;
+  color: #c00; }
+
+img.left {
+  margin: 0 20px 0 0; }
+
+img.right {
+  margin: 0 0 0 20px; }
+
+/*--- FLASH/VIDEO ---*/
+object,
+embed,
+video {
+  max-width: 100%;
+  height: auto; }
+
+/*------------------------------------*\
+	FORMS
+\*------------------------------------*/
+/*
+Unfortunately, and somewhat obviously, forms don’t fit the baseline all too well. Perhaps in a later version...
+*/
+fieldset {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5em; }
+
+label {
+  display: block;
+  cursor: pointer; }
+
+label:after {
+  content: ":"; }
+
+label::after {
+  content: ":"; }
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/*
+Nice UI touch for placeholders. To get placeholders working cross-browser see @dan_bentley’s jQuery plugin: https://github.com/danbentley/placeholder
+*/
+[placeholder] {
+  cursor: pointer; }
+
+[placeholder]:active,
+[placeholder]:focus {
+  cursor: text; }
+
+.check-list {
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0 1.5em 0; }
+
+.check-list li {
+  width: 25%;
+  float: left; }
+
+.check-label {
+  display: inline; }
+
+.check-label:after {
+  content: normal; }
+
+.check-label::after {
+  content: normal; }
+
+.button {
+  cursor: pointer; }
+
+fieldset > :last-child {
+  /* Remove the margin from the last element in the fieldset--this makes our padding more consistent. */
+  margin: 0; }
+
+/*------------------------------------*\
+	TABLES
+\*------------------------------------*/
+/*
+Unfortunately, and somewhat obviously, tables don’t fit the baseline all too well. Perhaps in a later version...
+*/
+table {
+  margin-bottom: 1.5em;
+  width: 100%;
+  max-width: 100%; }
+
+thead tr:last-of-type th {
+  /* Thicker border on the table-headers of the last row in the table head */
+  border-bottom-width: 2px; }
+
+tbody th {
+  /* Thicker right border on table-headers in the table body */
+  border-right-width: 2px; }
+
+th:empty {
+  /* Hide the borders on any empty table-headers */
+  border: none; }
+
+th, td {
+  vertical-align: top;
+  padding: 0.75em;
+  border: 1px solid #ccc; }
+
+th {
+  font-weight: bold;
+  text-align: center; }
+
+table [colspan] {
+  /* This looks lovely, trust me... */
+  text-align: center; }
+
+table [rowspan] {
+  /* ...as does this. */
+  vertical-align: middle; }
+
+/*
+Assuming IE has an 'implied' colspan of one on cells without an explicit colspan attribute, fix/undo it.
+See http://jsfiddle.net/csswizardry/UJJay/
+*/
+[colspan="1"] {
+  text-align: left; }
+
+[rowspan="1"] {
+  vertical-align: top; }
+
+tbody tr:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.05); }
+
+tfoot {
+  text-align: center; }
+
+tfoot td {
+  border-top-width: 2px; }
+
+/*------------------------------------*\
+	MESSAGES
+\*------------------------------------*/
+/*
+Unfortunately feedback messages don’t fit the baseline all too well. Perhaps in a later version...
+*/
+.message {
+  font-weight: normal;
+  display: block;
+  padding: 10px 10px 10px 36px;
+  border: 1px solid #ccc;
+  margin: 0 0 1.5em 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+
+/* With multiple errors it’s nice to group them. */
+ul.message {
+  list-style: decimal outside;
+  /* It’s also handy to number them. However, they might not necessarily be in a particular order, so we spoof it by putting numbers on an unordered list */
+  padding: 10px 10px 10px 56px; }
+
+.error {
+  border-color: #fb5766;
+  background: url(../img/css/icons/error.png) 10px center no-repeat #ffaabb; }
+
+.success {
+  border-color: #83ba77;
+  background: url(../img/css/icons/success.png) 10px center no-repeat #d1feba; }
+
+.info {
+  border-color: #85a5be;
+  background: url(../img/css/icons/info.png) 10px center no-repeat #c4dbec; }
+
+.warning {
+  border-color: #d8d566;
+  background: url(../img/css/icons/warning.png) 10px center no-repeat #fef8c4; }
+
+/*------------------------------------*\
+	MISC
+\*------------------------------------*/
+hr {
+  margin: 0 0 1.5em 0; }
+
+.accessibility {
+  /* Hide content off-screen without hiding from screen-readers. N.B. This is not suited to RTL languages */
+  position: absolute;
+  left: -99999px; }
+
+.more-link:after {
+  /* Too many people use &raquo; in their markup to signify progression/movement, that ain’t cool. Let’s insert that using content:""; */
+  content: " »"; }
+
+.more-link::after {
+  content: " »"; }
+
+/*------------------------------------*\
+	CLASSES
+\*------------------------------------*/
+/*
+Some not-too-pretty and insemantic classes to do odd jobs.
+*/
+.left {
+  float: left!important; }
+
+.right {
+  float: right!important; }
+
+.clear {
+  clear: both;
+  float: none; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center,
+.text-centre {
+  text-align: center; }
+
+/*------------------------------------*\
+	DIAGNOSTICS
+\*------------------------------------*/
+/*
+APPLY A CLASS OF .debug TO THE HTML ELEMENT ONLY WHEN YOUR SITE IS ON DEV
+
+Turn the grids back on. Idea given by @VictorPimentel
+*/
+.debug {
+  background: url(../img/css/baseline.gif) 0 18px white !important; }
+
+/*
+Red border == something is wrong
+Yellow border == something may be wrong, you should double check.
+Green border == perfect, nice one!
+*/
+/* Styles */
+.debug [style] {
+  /* Inline styles aren’t great, can this be avoided? */
+  outline: 5px solid yellow; }
+
+/* Images */
+.debug img {
+  /* Images without alt attributes are bad! */
+  outline: 5px solid red; }
+
+.debug img[alt] {
+  /* Images with alt attributes are good! */
+  outline-color: green; }
+
+.debug img[alt=""] {
+  /* Images with empty alt attributes are okay in the right circumstances. */
+  outline-color: yellow; }
+
+/* Links */
+.debug a {
+  /* Links without titles are yellow, does your link need one? */
+  outline: 5px solid yellow; }
+
+.debug a[title] {
+  /* Links with titles are green, title attributes can be very useful! */
+  outline-color: green; }
+
+.debug a[href="#"] {
+  /* Were you meant to leave that hash in there? */
+  outline-color: yellow; }
+
+.debug a[target] {
+  /* What were you thinking?! */
+  outline-color: red; }
+
+/* Classes/IDs */
+.debug [class=""],
+.debug [id=""] {
+  /* Is this element meant to have an empty class/ID? */
+  outline: 5px solid yellow; }
+
+/*------------------------------------*\
+	NARROW
+\*------------------------------------*/
+/*
+CSS for tablets and narrower devices
+*/
+/*--- END NARROW ---*/
+/*------------------------------------*\
+	MOBILE
+\*------------------------------------*/
+/*
+CSS for mobile devices.
+Linearise it!
+*/
+@media (max-width: 720px) {
+  /*------------------------------------*\
+  	MAIN
+  \*------------------------------------*/
+  .debug,
+  .debug body {
+    background: none!important; }
+
+  html {
+    font-size: 1.125em; }
+
+  body {
+    -webkit-text-size-adjust: none; }
+
+  .wrapper {
+    width: auto!important;
+    padding: 10px!important;
+    width: auto!important; }
+
+  .grids {
+    margin: 0!important;
+    width: auto!important; }
+
+  [class^="grid-"],
+  .grids [class^="grid-"] {
+    width: auto!important;
+    float: none!important;
+    margin: 0!important; }
+
+  /*------------------------------------*\
+  	LOGO
+  \*------------------------------------*/
+  #logo {
+    margin: 0 auto 1.5em; }
+
+  /*------------------------------------*\
+  	TYPE
+  \*------------------------------------*/
+  /*--- LISTS ---*/
+  ul,
+  ol {
+    margin: 0 0 1.5em 25px; }
+
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul {
+    /* Let’s take care of lists in lists */
+    margin: 0 0 0 25px; }
+
+  dd {
+    margin-left: 25px; }
+
+  /*------------------------------------*\
+  	IMAGES
+  \*------------------------------------*/
+  img.left,
+  img.right {
+    max-width: 50%;
+    height: auto; } }
+/*--- END MOBILE ---*/
+/*------------------------------------*\
+	PRINT
+\*------------------------------------*/
+/*
+Good ol’ fashioned paper...
+*/
+@media print {
+  /*------------------------------------*\
+  	MAIN
+  \*------------------------------------*/
+  /*
+  Give everything some decent contrast.
+  */
+  * {
+    background: #fff;
+    color: #000;
+    text-shadow: none!important; }
+
+  	                  /*
+  Set a nice measure and take the font down to print-acceptable sizes.
+  */
+  body {
+    font-size: 0.75em;
+    /* 12px (if base font-size was 16px) */ }
+
+  .wrapper {
+    width: 75%;
+    margin: 0 auto; }
+
+  /*
+  A list of things you don’t want printing. Add to/subtract from as necessary. 
+  */
+  .nav,
+  #footer {
+    display: none; }
+
+  #logo img {
+    position: static; }
+
+  /*
+  Linearise
+  */
+  .grids {
+    width: auto; }
+
+  [class^="grid-"] {
+    width: auto;
+    float: none;
+    clear: both; }
+
+  /*
+  Don’t let images break anything.
+  */
+  img {
+    max-width: 100%;
+    height: auto; }
+
+  /*
+  Messages look odd with just borders.
+  */
+  .message {
+    border: none;
+    font-weight: bold; }
+
+  /*
+  Try to avoid tables spanning multiple pages. Not failsafe, but a good start.
+  */
+  table {
+    page-break-before: always; }
+
+  /*
+  Show the accessibility class.
+  */
+  .accessibility {
+    position: static; }
+
+  /*
+  Display the href of any links.
+  */
+  a:link:after, a:visited:after {
+    content: " (" attr(href) ")";
+    font-size: smaller; }
+
+  a:link::after, a:visited::after {
+    content: " (" attr(href) ")";
+    font-size: smaller; }
+
+  /*
+  Any links that are root relative to your site need prepending with your URL.
+  */
+  a[href^="/"]:after {
+    content: " (http://yoururlhere.com" attr(href) ")";
+    font-size: smaller; }
+
+  a[href^="/"]::after {
+    content: " (http://yoururlhere.com" attr(href) ")";
+    font-size: smaller; }
+
+  /*
+  Any Flash/video content can’t be printed so leave a message.
+  */
+  object:after {
+    content: "Flash/video content. Head to http://yoururlhere.com/ to view this content.";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1.5em; }
+
+  object::after {
+    content: "Flash/video content. Head to http://yoururlhere.com/ to view this content.";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1.5em; } }
+/*--- END PRINT ---*/
+#banner {
+  background: url("../images/bg.png") repeat;
+  overflow: hidden;
+  clear: both;
+  height: 75px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
+  #banner a.logo {
+    display: block;
+    width: 210px;
+    height: 45px;
+    margin-top: 15px;
+    background: url("../images/tw-logo-210px.png") no-repeat;
+    text-indent: -999em;
+    float: left; }
+  #banner a.website {
+    display: block;
+    background: black;
+    color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    float: right;
+    padding: 5px 10px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center; }
+    #banner a.website:hover {
+      color: #fff;
+      color: rgba(255, 255, 255, 0.6); }
+
+section#hero img {
+  margin-left: 10%; }
+section#hero h1 {
+  color: #434343;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 4em;
+  text-align: center; }
+section#hero h2 {
+  color: #434343;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.3em;
+  margin-bottom: 1em; }
+section#hero a.button {
+  background: #802121;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  display: block;
+  text-align: center; }
+section#hero p {
+  text-align: center;
+  color: #434343; }
+
+#contents {
+  color: #fff; }
+  #contents ol {
+    list-style: none;
+    position: relative; }
+
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+html {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #e4eef6; }
+
+body {
+  background: none; }
+
+#page {
+  margin: 0 auto;
+  float: none;
+  text-align: center; }
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px; }
+  .wrapper .col-2 {
+    width: 50%;
+    float: left;
+    position: relative; }
+    .wrapper .col-2.first {
+      margin-right: 5%;
+      width: 45%; }
+
+#hero, #why, #contents, #about, footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
+
+header#hero {
+  background: #eeeeee;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  /* W3C */
+  background: url("../images/greybackground.gif") repeat;
+  clear: both;
+  overflow: hidden; }
+  header#hero img {
+    float: left;
+    margin-right: 2em;
+    margin-left: 2em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    border: 6px solid #fff; }
+  header#hero .share {
+    width: 50%;
+    float: right;
+    margin-top: 1em; }
+  header#hero #headingtext {
+    text-align: center;
+    padding-top: 50px; }
+    header#hero #headingtext h1 {
+      color: #434343;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+      margin-bottom: 0.25em;
+      font-size: 4em;
+      text-align: center;
+      line-height: 1.2em; }
+    header#hero #headingtext h2 {
+      color: #434343;
+      text-align: center;
+      font-weight: normal;
+      font-size: 1.0em;
+      margin-bottom: 2em;
+      margin-top: 2em; }
+    header#hero #headingtext a.button {
+      background: #a90329;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a90329), color-stop(44%, #8f0222), color-stop(100%, #6d0019));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+      /* Opera11.10+ */
+      background: -ms-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+      /* IE10+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+      /* IE6-9 */
+      background: linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+      /* W3C */
+      padding: 10px 30px;
+      margin-top: 40px;
+      color: #fff;
+      border-radius: 4px;
+      border: 1px solid rgba(169, 3, 41, 0.6);
+      text-decoration: none;
+      text-align: center; }
+      header#hero #headingtext a.button:hover {
+        background: #8f0222;
+        box-shadow: 10px 10px 30px rgba(169, 3, 41, 0.3); }
+    header#hero #headingtext p {
+      text-align: center;
+      color: #434343; }
+
+section#why {
+  background: #258dc8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #258dc8), color-stop(100%, #258dc8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* W3C */
+  background: url("../images/deep sea.jpg") repeat; }
+  section#why aside {
+    padding: 30px 20px 10px 20px;
+    border-radius: 3px;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.3);
+    display: block;
+    background: #000;
+    background: rgba(0, 0, 0, 0.7); }
+    section#why aside p {
+      font-family: "Helvetica Neue", Arial, Sans-serif;
+      font-size: 1.5em;
+      font-weight: 100; }
+
+section#contents {
+  background: url("../images/bg.png") repeat; }
+
+section#about {
+  background: #258dc8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #258dc8), color-stop(100%, #258dc8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #258dc8 0%, #258dc8 100%);
+  /* W3C */
+  background: url("../images/deep sea.jpg") repeat;
+  color: #eaeaea; }
+
+footer {
+  background: url("../images/bg.png"); }
+
+hr {
+  clear: both;
+  border: none;
+  margin: 0px;
+  padding: 0px; }
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1; }
+
+h2 {
+  font-size: 2em; }
+
+a {
+  color: inherit; }
+
+h1, h2, h3, h4, p, a, ul, ol {
+  font-family: Hoefler Text, Georgia, Serif; }
+
+/*------------------------------------*\
+	IMAGES
+\*------------------------------------*/
+#logo {
+  margin-bottom: 1.5em; }
+
+/*------------------------------------*\
+	NARROW
+\*------------------------------------*/
+/*
+CSS for tablets and narrower devices
+*/
+/*--- END NARROW ---*/
+/*------------------------------------*\
+	MOBILE
+\*------------------------------------*/
+/*
+CSS for mobile devices.
+Linearise it!
+*/
+@media (max-width: 720px) {
+  body {
+    font-size: 0.75em; } }
+/*--- END MOBILE ---*/

@@ -4,6 +4,7 @@
   overflow:hidden;
   clear: both;
   height: 75px;
+  border-bottom: 3px solid rgba(255,255,255,0.2);
   
   a.logo { 
     display: block;
@@ -18,7 +19,7 @@
   a.website { 
     display: block;
     background: black;
-    color: #4a4a4a;
+    color: rgba(255,255,255,0.2);
     border-radius:4px;
     float:right;
     padding: 5px 10px;
@@ -28,6 +29,7 @@
     
     &:hover { 
       color: #fff;
+      color: rgba(255,255,255,0.6);
     }
   }  
 }

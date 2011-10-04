@@ -14,7 +14,6 @@
 html{
 	font-family:"Helvetica Neue", Arial, sans-serif;
 	color:#e4eef6;
-	@include blue;
 }
 body{
 	background:none;
@@ -31,8 +30,10 @@ body{
 	margin:0 auto;
 	padding:0 10px;
 	
-	.2col { 
-	  width: 50%:;
+	.col-2 { 
+	  width: 50%;
+	  float:left;
+	  position:relative;
 	  
 	  &.first { 
 	    margin-right: 5%;
@@ -41,7 +42,7 @@ body{
 	  }
 }
 
-#hero, #why, #contents, #about, footer { padding-top: 3em; padding-bottom: 3em;}
+#hero, #why, #contents, #about, footer { padding-top: 3em; padding-bottom: 3em; clear:both; overflow:hidden; border-bottom: 3px solid rgba(255,255,255,0.2);}
 
 
   
@@ -54,13 +55,20 @@ header#hero {
   background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
   background: linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* W3C */
+  background: url('../images/greybackground.gif') repeat;
   clear:both;
   overflow: hidden;
+  
   img { float:left;
     margin-right: 2em;
     margin-left: 2em;
     box-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
     border: 6px solid #fff;}
+  .share {
+    width: 50%;
+    float:right;
+    margin-top: 1em;
+  }  
   #headingtext{ 
     text-align: center;    
     padding-top: 50px;
@@ -70,6 +78,7 @@ header#hero {
       margin-bottom: 0.25em;
       font-size: 4em;
       text-align: center;
+      line-height: 1.2em;
       }
     h2 { 
       color: #434343;
@@ -111,6 +120,21 @@ header#hero {
   
 section#why { 
   @include blue;
+  
+  aside { 
+    padding: 30px 20px 10px 20px;
+    border-radius: 3px;
+    box-shadow: 2px 0px 2px rgba(0,0,0,0.3);
+    display:block;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    
+    p { 
+          font-family: "Helvetica Neue", Arial, Sans-serif;
+          font-size: 1.5em; 
+          font-weight: 100;
+          }
+    }
   }  
 
 section#contents { 
