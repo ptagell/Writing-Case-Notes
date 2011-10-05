@@ -957,12 +957,11 @@ footer {
     list-style: none;
     margin-left: 0px;
     margin-bottom: 0px;
-    padding-top: 25px;
+    padding-top: 28px;
     padding-left: 0px; }
     footer ul li {
       margin-right: 10px;
       padding-right: 10px;
-      border-right: 1px solid #fff;
       float: left;
       position: relative; }
       footer ul li:last-child {
