@@ -928,6 +928,8 @@ footer {
     position: relative;
     list-style: none;
     margin-left: 0px;
+    margin-bottom: 0px;
+    padding-top: 25px;
     padding-left: 0px; }
     footer ul li {
       margin-right: 10px;
