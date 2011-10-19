@@ -104,11 +104,18 @@ header#hero {
     float:right;
     margin-right: 10%;
     box-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
-    border: 6px solid #fff;}
+    border: 6px solid #fff;
+    width: 360px; 
+    height:auto;
+    }
   .share {
-
-    float:right;
+    text-align:left;
     margin-top: 1em;
+    width: 450px;
+    
+    a.twitter-share-button { 
+      
+      float:right;}
   }  
   #headingtext{ 
     text-align: center;    

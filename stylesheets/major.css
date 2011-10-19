@@ -897,10 +897,15 @@ header#hero {
     float: right;
     margin-right: 10%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-    border: 6px solid #fff; }
+    border: 6px solid #fff;
+    width: 360px;
+    height: auto; }
   header#hero .share {
-    float: right;
-    margin-top: 1em; }
+    text-align: left;
+    margin-top: 1em;
+    width: 450px; }
+    header#hero .share a.twitter-share-button {
+      float: right; }
   header#hero #headingtext {
     text-align: center;
     padding-top: 50px; }
