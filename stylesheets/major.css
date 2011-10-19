@@ -252,7 +252,7 @@ a:focus {
 /*--- LISTS ---*/
 ul,
 ol {
-  margin: 0 0 1.5em 60px; }
+  margin: 0 0 1.5em 40px; }
 
 ul ul,
 ol ol,
@@ -1028,8 +1028,10 @@ Linearise it!
       width: 100% !important;
       clear: both; }
     body #hero #headingtext {
-      padding-top: 20px;
+      padding-top: 10px;
       padding-bottom: 40px; }
+    body #hero h1 {
+      font-size: 3em !important; }
     body #hero .button {
       margin-top: 1.2em;
       margin-bottom: 0em; }
