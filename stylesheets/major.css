@@ -1012,7 +1012,7 @@ a {
 /*
 CSS for tablets and narrower devices
 */
-@media (min-width: 721px) and (max-width: 960px) {
+@media (min-width: 769px) and (max-width: 960px) {
   .col-2 {
     width: 100%; } }
 /*--- END NARROW ---*/
@@ -1023,7 +1023,7 @@ CSS for tablets and narrower devices
 CSS for mobile devices.
 Linearise it!
 */
-@media (max-width: 720px) {
+@media (max-width: 769  px) {
   body {
     font-size: 0.75em; }
     body .wrapper {
