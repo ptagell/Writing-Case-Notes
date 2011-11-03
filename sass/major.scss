@@ -266,9 +266,14 @@ CSS for tablets and narrower devices
 
 
 
-@media (min-width: 769px) and (max-width: 960px){
+@media (min-width: 720px) and (max-width: 960px){
   
-  .col-2 { width: 100%;}
+  .col-2 { width: 90%;}
+  .first { width: 90%;}
+  
+  #headingtext h1 { 
+    font-size: 70%;
+    }
 }
 /*--- END NARROW ---*/
 
@@ -288,12 +293,12 @@ Linearise it!
 
 
 
-@media (max-width: 769  px){
+@media (max-width: 769px){
 body{
 	font-size:0.75em;
 
 	.wrapper { 
-	  width: 80% !important;
+	  width: 70% !important;
 	  margin-left:0px auto;
 	  
 	}
@@ -310,7 +315,7 @@ body{
       padding-bottom: 40px;}
       
       h1 { 
-        font-size: 3em !important;}
+        font-size: 2.5em !important;}
       
     .button { 
       margin-top:1.2em;
@@ -323,7 +328,7 @@ body{
       margin-right: auto;
       float: none;
       text-align: center;
-      width: 100%;
+      width: 95%;
       height: auto;
 	    }
 	  }
